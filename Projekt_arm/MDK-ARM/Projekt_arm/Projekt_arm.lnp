@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"projekt_arm\startup_stm32f107xc.o"
+"projekt_arm\main.o"
+"projekt_arm\stm32f1xx_it.o"
+"projekt_arm\stm32f1xx_hal_msp.o"
+"projekt_arm\stm32f1xx_hal_gpio_ex.o"
+"projekt_arm\stm32f1xx_hal_spi.o"
+"projekt_arm\stm32f1xx_hal.o"
+"projekt_arm\stm32f1xx_hal_rcc.o"
+"projekt_arm\stm32f1xx_hal_rcc_ex.o"
+"projekt_arm\stm32f1xx_hal_gpio.o"
+"projekt_arm\stm32f1xx_hal_dma.o"
+"projekt_arm\stm32f1xx_hal_cortex.o"
+"projekt_arm\stm32f1xx_hal_pwr.o"
+"projekt_arm\stm32f1xx_hal_flash.o"
+"projekt_arm\stm32f1xx_hal_flash_ex.o"
+"projekt_arm\stm32f1xx_hal_exti.o"
+"projekt_arm\stm32f1xx_hal_tim.o"
+"projekt_arm\stm32f1xx_hal_tim_ex.o"
+"projekt_arm\system_stm32f1xx.o"
+--strict --scatter "Projekt_arm\Projekt_arm.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Projekt_arm.map" -o Projekt_arm\Projekt_arm.axf
